@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Balance</title>
+    <link rel="stylesheet" href="./css/basic-settings.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Account Balance</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|IBM+Plex+Sans:300,400,700|Lobster|Montserrat:300,400,700|Muli:300,400,700|Open+Sans:300,400,700|Pacifico|Poppins:300,400,700|Raleway:300,400,700|Roboto+Condensed:300,400,700|Roboto+Slab:300,400,700|Roboto:300,400,700|Teko:300,400,700|Ubuntu:300,400,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- UI -->
+    <div class="wrap">
+        <section class="banner-section">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="banner">
+                        <h1 class="banner__title"> <span class="banner__title--bold">My Account Balance </span> </h1>
+                        <p class="banner__text"> Money is importent!! we should have a tracking system</p>
+                    </div>
+                    <div class="form-control-panel">
+                        <div class="form">
+                            <div class="form__item">
+                                <label for=""> Description</label>
+                                <input type="text" id="input-description" placeholder="Description">
+                            </div>
+                            <div class="form__item">
+                                <label for=""> Amount</label>
+                                <input type="number" id="input-amount" placeholder="ex : 900">
+                            </div>
+                            <div class="form__item">
+                                <label for=""> Income or expences </label>
+                                <select id="select-income-expences" required>
+                                    <option value="Poppins" selected>--Select--</option>
+                                    <option value="income">Income</option>
+                                    <option value="expences Slab">expences</option>
+                                </select>
+                            </div>
+
+                            <div class="form__item-btn">
+                                <div class="button btn_primary " id="btn_add">Add</div>
+                            </div>
+
+                        </div>
+                        <div class="form-content">
+                            <div class="form-content__item">
+                                <div class="form ">
+                                    <h2 class="form-title">Income</h2>
+
+                                    <table class="table" id="table-income">
+
+                                        <tr>
+                                            <td>Total income : </td>
+                                            <td id="ac-income"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="form-content__item">
+                                <div class="form ">
+                                    <h2 class="form-title">Expences</h2>
+                                    <table class="table" id="table-expences">
+                                        <tr>
+                                            <td>Total Expences : </td>
+                                            <td id="ac-expenses"></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac-balance">
+                            <h2 class="form-title">Account Balance</h2>
+                            <h2 class="form-title" id="total-balance"></h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <div class="container">
+                <div class="table-genarate-wrap">
+                    <table class="table" id="genarate_table"></table> <br>
+                    <textarea class="textarea" name="" id="get_code" cols="30" rows="10"></textarea>
+                    <div class="button btn_primary--copy" id="copy">Copy to clipboard</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__img">
+                    <a href="index.html"> <img src="./img/logo.svg" alt="uxatik"></a>
+                </div>
+                <div class="footer__para">
+                    <p>Copyright 2020 by Atik</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/appAsa.js"></script> -->
+</body>
+
+</html>
